@@ -4,6 +4,8 @@ from app.utils import predict_digit_from_image
 
 def draw_digit_predict():
     st.header("Draw a digit")
+    st.write("Kindly draw a single digit.")
+    st.write("Multiple digits will display inaccurate results.")
 
     canvas_result = st_canvas(
         fill_color="#000000",
