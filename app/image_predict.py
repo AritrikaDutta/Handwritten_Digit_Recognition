@@ -4,7 +4,7 @@ from app.utils import predict_digit_from_image
 
 def image_digit_predict():
     st.header("Upload an image of a digit")
-    uploaded_file = st.file_uploader("Choose an image...", type="png")
+    uploaded_file = st.file_uploader("Choose an image...", type = ["png", "jpg", "jpeg"])
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
